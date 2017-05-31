@@ -1,0 +1,27 @@
+{
+  "name": "pi-camera",
+  "version": "0.0.1",
+  "description": "https://github.com/stetsmando/pi-camera",
+  "main": "lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stetsmando/pi-camera.git"
+  },
+  "keywords": [
+    "Raspberry",
+    "Pi",
+    "Camera",
+    "Picture",
+    "Photo",
+    "Video"
+  ],
+  "author": "Stetson Pierce <stetsmando@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stetsmando/pi-camera/issues"
+  },
+  "homepage": "https://github.com/stetsmando/pi-camera#readme"
+}
