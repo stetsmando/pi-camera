@@ -1,9 +1,7 @@
 const execute = require('./lib/exec');
 
 // Class being exported
-exports.PiCamera = PiCamera;
-
-class PiCamera {
+exports.PiCamera = class PiCamera {
   constructor(config) {
     // Ensure config is an object
     config = config || {};
