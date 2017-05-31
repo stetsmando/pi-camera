@@ -36,7 +36,7 @@ class PiCamera {
   }
 
   capture() {
-    return execute.run(`raspistill -o ${ this.get('path') }/${ this.get('imageName') }.jpg -w ${ this.get('w') } -h ${ this.get('h') }`);
+    return execute.run(`raspistill -o ${ this.get('path') }/${ this.get('fileName') }.jpg -w ${ this.get('w') } -h ${ this.get('h') }`);
   }
 }
 
