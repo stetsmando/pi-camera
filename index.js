@@ -1,7 +1,7 @@
 const execute = require('./lib/exec');
 
 // Class being exported
-exports.PiCamera = class PiCamera {
+class PiCamera {
   constructor(config) {
     // Ensure config is an object
     config = config || {};
@@ -39,3 +39,5 @@ exports.PiCamera = class PiCamera {
     return execute.run(`raspistill -o ${ this.get('path') }/${ this.get('imageName') }.jpg -w ${ this.get('w') } -h ${ this.get('h') }`);
   }
 }
+
+module.exports = PiCamera;
