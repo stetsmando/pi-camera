@@ -8,5 +8,6 @@
 	"nopreview",
 	"vstab",
 	"hflip",
-	"vflip"
+	"vflip",
+	"timestamp"
 ]
