@@ -10,6 +10,7 @@
 	"hflip",
 	"vflip",
 	"timestamp",
+	"datetime",
 	"fullscreen",
 	"nopreview"
 ]

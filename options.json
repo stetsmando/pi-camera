@@ -1,5 +1,17 @@
 [
   "output",
   "width",
-  "height"
+  "height",
+  "quality",
+  "raw",
+  "latest",
+  "timeout",
+  "thumb",
+  "demo",
+  "encoding",
+  "timelapse",
+  "signal",
+  "burst",
+  "framestart",
+  "restart"
 ]
