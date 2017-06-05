@@ -1,6 +1,6 @@
 {
   "name": "pi-camera",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "https://github.com/stetsmando/pi-camera",
   "main": "index.js",
   "scripts": {
