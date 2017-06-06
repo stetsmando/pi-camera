@@ -1,7 +1,7 @@
 {
   "name": "pi-camera",
   "version": "0.1.4",
-  "description": "https://github.com/stetsmando/pi-camera",
+  "description": "A very lightweight promise based Node.js wrapper for the native Raspberry Pi Camera CLI tools.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
