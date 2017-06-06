@@ -19,7 +19,12 @@
     "Camera",
     "Picture",
     "Photo",
-    "Video"
+    "Video",
+    "raspicam",
+    "raspistill",
+    "raspivid",
+    "picamera",
+    "pi-camera"
   ],
   "author": "Stetson Pierce <stetsmando@gmail.com>",
   "license": "MIT",
