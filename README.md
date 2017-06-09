@@ -23,7 +23,7 @@ const myCamera = new PiCamera({
   nopreview: true,
 });
 
-myCmaera.snap();
+myCamera.snap();
   .then((msg) => {
     // Your picture was captured
   })
