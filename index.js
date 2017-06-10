@@ -1,4 +1,4 @@
-const { run, cmd } = require('./lib/exec');
+const { Execute } = require('./lib/Execute');
 const FLAGS = require('./flags');
 const OPTS = require('./options');
 
@@ -46,11 +46,9 @@ class PiCamera {
       throw new Error('snap() can only be called when PiCamera is in \'photo\' mode');
     }
     
-    return run(cmd('raspistill', this.configToArray()));
+    return Execute.run(Execute.cmd('raspistill', this.configToArray()));
   }
 }
-
-module.exports = PiCamera;
 
 // Takes internal config object and return array version
 PiCamera.prototype.configToArray = function() {
@@ -71,6 +69,7 @@ PiCamera.prototype.configToArray = function() {
   return configArray;
 }
 
+module.exports = PiCamera;
 
 
 /*
