@@ -1,4 +1,4 @@
-const Execute = require('./lib/Execute');
+const { Execute, Spawn } = require('./lib/Execute');
 const FLAGS = require('./flags');
 const OPTS = require('./options');
 
@@ -46,7 +46,15 @@ class PiCamera {
       throw new Error('snap() can only be called when PiCamera is in \'photo\' mode');
     }
     
-    return Execute.run(Execute.cmd('raspistill', this.configToArray()));
+    return new Promise((resolve, reject) => {
+      const child = Spawn.run('raspistill', this.configToArray());
+      child.stdout.on('data', (data) => {
+        resolve(data.toString());
+      });
+      child.stderr.on('data', (data) => {
+        reject(data.toString());
+      });
+    });
   }
 }
 
