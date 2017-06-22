@@ -1,4 +1,4 @@
-const { Execute } = require('./lib/Execute');
+const Execute = require('./lib/Execute');
 const FLAGS = require('./flags');
 const OPTS = require('./options');
 
