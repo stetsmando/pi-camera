@@ -1,4 +1,4 @@
-const { Execute, Spawn } = require('./lib/Execute');
+const Execute = require('./lib/Execute');
 const { spawn } = require('child_process');
 const FLAGS = require('./flags');
 const OPTS = require('./options');
@@ -48,10 +48,6 @@ class PiCamera {
     }
     
     return Execute.run(Execute.cmd('raspistill', this.configToArray()));
-  }
-
-  spawn() {
-    return spawn('raspistill', this.configToArray());
   }
 }
 
