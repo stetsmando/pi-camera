@@ -13,6 +13,7 @@ npm install pi-camera --save
 ```
 
 ## Basic usage
+### Raspistill
 ```javascript
 const PiCamera = require('pi-camera');
 const myCamera = new PiCamera({
@@ -31,4 +32,7 @@ myCamera.snap();
      // Handle your error
   });
 ```
-
+### Raspivid
+```
+// Code here
+```
