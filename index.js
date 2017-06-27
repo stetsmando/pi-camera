@@ -44,10 +44,19 @@ class PiCamera {
   // Take a picture
   snap() {
     if (this.mode !== 'photo') {
-      throw new Error('snap() can only be called when PiCamera is in \'photo\' mode');
+      throw new Error(`snap() can only be called when Pi-Camera is in 'photo' mode`);
     }
     
     return Execute.run(Execute.cmd('raspistill', this.configToArray()));
+  }
+
+  // Record a video
+  record() {
+    if (this.mode !== 'video') {
+      throw new Error(`record() can only be called when Pi-Camera is in 'video' mode`);
+    }
+
+    return Execute.run(Execute.cmd('raspivid', this.configToArray()));
   }
 }
 
