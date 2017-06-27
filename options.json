@@ -13,5 +13,6 @@
   "signal",
   "burst",
   "framestart",
-  "restart"
+  "restart",
+  "framerate"
 ]
