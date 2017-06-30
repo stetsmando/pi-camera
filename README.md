@@ -25,7 +25,7 @@ const myCamera = new PiCamera({
 });
 
 myCamera.snap();
-  .then((msg) => {
+  .then((result) => {
     // Your picture was captured
   })
   .catch((error) => {
@@ -45,8 +45,12 @@ const myCamera = new PiCamera({
 });
 
 myCamera.record()
-  .then((result) => process.send({ rsp: 'success', result }))
-  .catch((error) => process.send({ rsp: 'failure', error }));
+  .then((result) => {
+    // Your video was captured
+  })
+  .catch((error) => {
+     // Handle your error
+  });
 ```
 
 __Something worth considering is that the Camera module captures videos in a .h264 format, which is raw and uncompressed. Most players do not support this format so you might want to convert your files into something like .mp4. You can read more about it [here](https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspivid.md).__
