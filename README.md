@@ -3,6 +3,9 @@ A _very_ lightweight promise based Node.js wrapper for the [native Raspberry Pi 
 
 _Note: This was written with the intent of NOT being a hand holding library, but rather just give you access to execute commands on the camera in a flexible way._
 
+## Want to Contribute or Help Out?
+Feel free to head over to the GitHub page for Pi-Camera and submit comments, issues, pulls, and whatever else you'd like. I plan on adding features as I need them for my own projects so if something isn't happening fast enough for you why not fix it? (:
+
 ## Installation
 ```javascript
 // NPM 5
