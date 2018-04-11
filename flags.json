@@ -9,6 +9,8 @@
 	"vstab",
 	"hflip",
 	"vflip",
+	"rotation",
+	"timeout",
 	"timestamp",
 	"datetime",
 	"fullscreen",
