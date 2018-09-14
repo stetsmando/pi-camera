@@ -14,5 +14,6 @@
   "burst",
   "framestart",
   "restart",
-  "framerate"
+  "framerate",
+  "rotation"
 ]
