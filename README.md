@@ -78,4 +78,4 @@ Options are portions of the `Raspistill` and `Raspivid` commands that are passed
 raspistill --output some/path/here --width 1080 --height 720
 ```
 
-While the command line tools support many flags and options they're not all configured in this lib. If you discover one that you need but isn't supported, consider testing it and then adding it and making a PR.
+While the command line tools support many flags and options they're not all configured in this lib. If you discover one that you need but isn't supported, consider testing it, adding it and making a PR.

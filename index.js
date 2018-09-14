@@ -1,9 +1,7 @@
 const Execute = require('./lib/Execute');
-const { spawn } = require('child_process');
 const FLAGS = require('./flags');
 const OPTS = require('./options');
 
-// Class being exported
 class PiCamera {
   constructor(config) {
     // Ensure config is an object
@@ -62,19 +60,15 @@ class PiCamera {
 
 // Takes internal config object and return array version
 PiCamera.prototype.configToArray = function() {
-  let configArray = [];
-    for (let prop in this.config) {
-      if (FLAGS.includes(prop) && this.config[prop]) {
-        configArray.push(`--${ prop }`);
-        continue;
-      }
-
-      if (OPTS.includes(prop)) {
-        configArray.push(`--${ prop }`);
-        configArray.push(this.config[prop]);
-        continue;
-      }
+  let configArray = []
+  Object.keys(this.config).forEach((key, i) => {
+    // Only include flags if they're set to true
+    if (FLAGS.includes(key) && this.config[key]) {
+      configArray.push(`--${key}`)
+    } else if (OPTS.includes(key)) {
+      configArray.push(`--${key}`, this.config[key])
     }
+  })
 
   return configArray;
 }
