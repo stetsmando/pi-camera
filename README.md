@@ -61,4 +61,21 @@ __Something worth considering is that the Camera module captures videos in a .h2
 ## Flags and Options
 The Raspistill and Raspivid commands support a good number of parameters and options.
 
-Currently they're all stored in the same files, so you'll need to do your do diligence and make sure you're using the correct options and flags for what you're trying to do.
+Currently they're all stored in the same files, so you'll need to do your do diligence and make sure you're using the correct options and flags for what you're trying to do. A good list of them can be found [here](https://www.raspberrypi.org/documentation/raspbian/applications/camera.md)
+
+### **What's the difference between Flags and Options?**
+Good question!
+
+Flags are portions of the `Raspistill` and `Raspivid` commands that are passed and require no additional input to fuction like so:
+```bash
+# NOTE: Not a working command
+raspistill --nopreview --raw --hflip --vflip
+```
+
+Options are portions of the `Raspistill` and `Raspivid` commands that are passed and require additional input to fuction like so:
+```bash
+# NOTE: Not a working command
+raspistill --output some/path/here --width 1080 --height 720
+```
+
+While the command line tools support many flags and options they're not all configured in this lib. If you discover one that you need but isn't supported, consider testing it and then adding it and making a PR.
