@@ -1,16 +1,11 @@
 [
-	"raw",
-	"verbose",
-	"demo",
-	"preview",
-	"fullscreen",
-	"opacity",
-	"nopreview",
-	"vstab",
-	"hflip",
-	"vflip",
-	"timestamp",
-	"datetime",
-	"fullscreen",
-	"nopreview"
+  "raw",
+  "verbose",
+  "fullscreen",
+  "nopreview",
+  "vstab",
+  "hflip",
+  "vflip",
+  "timestamp",
+  "datetime"
 ]

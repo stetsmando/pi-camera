@@ -3,17 +3,14 @@
   "width",
   "height",
   "quality",
-  "raw",
   "latest",
   "timeout",
   "thumb",
   "demo",
   "encoding",
   "timelapse",
-  "signal",
-  "burst",
-  "framestart",
-  "restart",
   "framerate",
-  "rotation"
+  "rotation",
+  "preview",
+  "opacity"
 ]
