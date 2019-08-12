@@ -12,5 +12,7 @@
   "framerate",
   "rotation",
   "preview",
-  "opacity"
+  "opacity",
+  "annotate",
+  "exif"
 ]
