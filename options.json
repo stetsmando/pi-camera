@@ -14,5 +14,9 @@
   "preview",
   "opacity",
   "annotate",
-  "exif"
+  "exif",
+  "brightness",
+  "contrast",
+  "shutter",
+  "saturation"
 ]
