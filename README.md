@@ -35,6 +35,27 @@ myCamera.snap()
      // Handle your error
   });
 ```
+
+You may use the snapDataUrl method for capturing a photo in Data-URL format (i.e. for embedding it in a website) without saving it to disk.
+```javascript
+const PiCamera = require('pi-camera');
+const myCamera = new PiCamera({
+  mode: 'photo',
+  width: 640,
+  height: 480,
+  nopreview: true,
+});
+
+myCamera.snapDataUrl()
+  .then((result) => {
+    // Your picture was captured
+    console.log('<img src="${result}">');
+  })
+  .catch((error) => {
+     // Handle your error
+  });
+```
+
 ### Raspivid (Video Capture)
 ```javascript
 const PiCamera = require('pi-camera');

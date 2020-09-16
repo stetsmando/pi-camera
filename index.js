@@ -48,6 +48,19 @@ class PiCamera {
     return Execute.run(Execute.cmd('raspistill', this.configToArray()));
   }
 
+  // Take a picture and return it in Data URL format (data:image/jpg;base64,...)
+  async snapDataUrl(maxBuffer = 1024*1024*10) {
+
+    if (this.mode !== 'photo') {
+      throw new Error(`snapDataUrl() can only be called when Pi-Camera is in 'photo' mode`);
+    }
+
+    this.config.output = '-';
+    const image = await Execute.run(Execute.cmd('raspistill', this.configToArray()), {encoding: 'binary', maxBuffer: maxBuffer});
+    let data = Buffer.from(image, 'binary').toString('base64');
+    return 'data:image/jpg;base64,' + data;
+  }
+
   // Record a video
   record() {
     if (this.mode !== 'video') {
