@@ -1,6 +1,6 @@
 {
   "name": "pi-camera",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "A very lightweight promise based Node.js wrapper for the native Raspberry Pi Camera CLI tools.",
   "main": "index.js",
   "scripts": {
