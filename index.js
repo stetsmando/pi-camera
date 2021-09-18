@@ -79,7 +79,11 @@ PiCamera.prototype.configToArray = function() {
     if (FLAGS.includes(key) && this.config[key]) {
       configArray.push(`--${key}`)
     } else if (OPTS.includes(key)) {
-      configArray.push(`--${key}`, this.config[key])
+      if (key === 't') {
+        configArray.push(`-${key}`, this.config[key])
+      } else {
+        configArray.push(`--${key}`, this.config[key])
+      }
     }
   })
 
