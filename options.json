@@ -19,5 +19,7 @@
   "contrast",
   "shutter",
   "saturation",
-  "roi"
+  "roi",
+  "t",
+  "exposure"
 ]
