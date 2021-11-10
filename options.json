@@ -20,5 +20,6 @@
   "shutter",
   "saturation",
   "roi",
-  "ISO"
+  "ISO",
+  "exposure"
 ]
